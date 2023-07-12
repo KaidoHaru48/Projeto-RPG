@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="CreatedCharacter.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cyberpunk 2207</title>
+    </head>
+    
+
+    <body>  
+            
+                
+        <div class="corpo">
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Ficha Cyberpunk</h1>
+            <p id="subtitulo">Complete as informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome do jogador com legenda "nome do jogador" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome do jogador"><strong>Nome do Jogador</strong></label>
+                    <input type="text" name="nome do jogador" id="nome do jogador" required>
+                </div>
+
+                <!-- Campo do nome do personagem com legenda "nome do personagem" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome do Personagem"><strong>Nome do Personagem</strong></label>
+                    <input type="text" name="nome do Personagem" id="nome do Personagem" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de escolha de Classe (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Escolha uma Classe</strong></label>
+                <label>
+                    <input type="radio" name="classe" value="Combatente">Combatente
+                </label>
+                <label>
+                    <input type="radio" name="classe" value="Atirador">Atirador
+                </label>
+                <label>
+                    <input type="radio" name="classe" value="Hacker">Hacker
+                </label>
+                <label>
+                    <input type="radio" name="classe" value="Curandeiro">Curandeiro
+                </label>
+                <label>
+                    <input type="radio" name="classe" value="Investigador">Investigador
+                </label>
+                <label>
+                    <input type="radio" name="classe" value="Brutamontes">Brutamontes
+                </label>
+                <label>
+                    <input type="radio" name="classe" value="Musicista">Musicista
+                </label>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de pericias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione as três Perícias:</strong></label><br>
+                    <input type="checkbox" id="pericia1" name="pericia1" value="atletismo">
+                    <label for="pericia1"> Atletismo</label>
+                    <br>
+                    <input type="checkbox" id="pericia2" name="pericia2" value="enganação">
+                    <label for="pericia2"> Enganação </label>
+                    <br>
+                    <input type="checkbox" id="pericia3" name="pericia3" value="furtividade">
+                    <label for="pericia3"> Furtividade </label>
+                    <br>
+                    <input type="checkbox" id="pericia4" name="pericia4" value="intimidação">
+                    <label for="pericia4"> Intimidação </label>
+                    <br>
+                    <input type="checkbox" id="pericia5" name="pericia5" value="luta">
+                    <label for="pericia5"> Luta </label>
+                    <br>
+                    <input type="checkbox" id="pericia6" name="pericia6" value="pilotagem">
+                    <label for="pericia6"> Pilotagem </label>
+                    <br>
+                    <input type="checkbox" id="pericia7" name="pericia7" value="Pontaria">
+                    <label for="pericia7"> Pontaria </label>
+                    <br>
+                    <input type="checkbox" id="pericia8" name="pericia8" value="prestidigitação">
+                    <label for="pericia8"> Prestidigitação </label>
+                    <br>
+                    <input type="checkbox" id="pericia9" name="pericia9" value="reflexos">
+                    <label for="pericia9"> Reflexos </label>
+                    <br>
+                    <input type="checkbox" id="pericia10" name="pericia10" value="tecnologia">
+                    <label for="pericia10"> Tecnologia </label>
+                    <br>
+                    <input type="checkbox" id="pericia11" name="pericia11" value="vontade">
+                    <label for="pericia11"> Vontade </label>
+                    <br>
+                    <input type="checkbox" id="pericia12" name="pericia12" value="iniciativa">
+                    <label for="pericia12"> Iniciativa</label>
+                    <br>
+                    <input type="checkbox" id="pericia13" name="pericia13" value="esgrimista">
+                    <label for="pericia13"> Esgrimista </label>
+                    <br>
+                    <input type="checkbox" id="pericia14" name="pericia14" value="criador">
+                    <label for="pericia14"> Criador </label>
+                    
+
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="historia"><strong>Historia do Personagem(opicional): </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="historia"></textarea>
+            </div>
+        </div class="corpo">
+            
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
